@@ -1,0 +1,137 @@
+@import url(_reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@600;700&display=swap');
+
+.body {
+    color: #FFFFFF;
+
+    min-height: 100vh;
+
+    background: rgb(0, 0, 0);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(1, 8, 14, 1) 25%, rgba(80, 94, 255, 0.85) 50%, rgba(1, 8, 14, 1) 75%, rgba(0, 0, 0, 1) 100%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    .body {
+        padding: 2rem calc((100vw - 1086px)/2);
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.divisor {
+    display: flex;
+    gap: 53px;
+    align-items: center;
+
+    margin: 88px 0px 40px;
+}
+
+.divisor__line {
+    height: 1px;
+    width: 282px;
+    background-color: #00F4BF;
+}
+
+.page-title {
+    font-family: 'Chakra Petch', sans-serif;
+    font-weight: 700;
+    font-size: 5rem;
+
+    margin-bottom: 2.5rem;
+}
+
+.page-title__emphasis {
+    color: #505EFF;
+}
+
+.dashboard {
+    background-color: rgba(255, 255, 255, 0.1);
+
+    border-radius: 2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #00F4BF;
+
+    padding: 3rem;
+    width: 100%;
+}
+
+.dashboard__items {
+    display: flex;
+    justify-content: space-between;
+}
+
+.dashboard__items__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    font-family: 'Inter', sans-serif;
+}
+
+.dashboard__item__img {
+    box-shadow: 0px 0px 24px 8px rgba(24, 118, 232, 0.25);
+
+    margin-bottom: 1rem;
+}
+
+.dashboard__item__img--rented {
+    position: relative;
+}
+
+.dashboard__item__img--rented::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+    top: 0;
+    
+    background-color: rgba(1, 8, 14, 0.4);
+}
+
+.dashboard__item__name {
+    font-weight: 600;
+    font-size: 2rem;
+
+    margin-bottom: 2.5rem;
+}
+
+.dashboard__item__button {
+    display: flex;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 1.5rem;
+
+    padding: 1rem 1.5rem;
+    min-width: 13rem;
+
+    border-radius: 1rem;
+
+    background-color: #1875E8;
+}
+
+.dashboard__item__button--return {
+    background-color: #01080E;
+}
+
+.hachuras {
+    margin-top: 1.5rem;
+    margin-right: 33px;
+    align-self: flex-end;
+}
